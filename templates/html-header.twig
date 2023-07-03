@@ -6,7 +6,10 @@
     <meta charset="{{ site.charset }}" />
     <meta name="description" content="{{ site.description }}">
     <link rel="stylesheet" href="{{ site.theme.link }}/style.css" type="text/css" media="screen" />
-    {%set styles = ['/src/css/main.css']%}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@100;300;500;600&display=swap" rel="stylesheet">
+    {%set styles = ['/src/css/w3.css', '/src/css/bootstrap.min.css', '/src/css/main.css']%}
     {% for style in styles %}
         <link rel="stylesheet" href="{{ site.theme.link }}{{ style }}" type="text/css" media="screen" />
     {% endfor %}

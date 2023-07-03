@@ -2,8 +2,7 @@
 
 {% block content %}
 	<div class="post">
-		<h2 class="h2"><a href="{{post.link}}">{{post.title}} Post</a></h2>
-			<P>{{stuff}}</p>
+		<h2 class="h2"><a href="{{post.link}}">{{post.title}}</a></h2>
 			<p>{{post.preview.length(25)}}</p>
 			{% if post.thumbnail.src %}
 				<img src="{{post.thumbnail.src}}" />

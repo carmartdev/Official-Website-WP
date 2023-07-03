@@ -1,43 +1,211 @@
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Ysabeau SC", sans-serif;
+  color: #2d3133;
 }
-a {
-  color: #000;
+header {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/jumborton.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: 15%;
+  z-index: -1;
+  position: relative;
+}
+section {
+  position: relative;
+  background-color: #eab2a0;
+}
+header h1 {
+  margin-top: 20%;
+  margin-left: 10%;
+  color: #eab2a0;
+  text-shadow: 2px 2px 4px black;
+  position: absolute;
+}
+header .main-p {
+  margin-top: 25%;
+  margin-left: 10%;
+  width: 80%;
+  color: #eab2a0;
+  text-shadow: 2px 2px 4px black;
+  position: absolute;
+}
+footer {
+  justify-content: center;
+}
+#header-bg {
+  width: 100%;
+  height: 80vh;
+  background-color: #435b669a;
+  margin-top: -25%;
+}
+nav .logo {
+  font-size: 36pt;
+  color: #eab2a0;
+}
+#first-nav {
+  margin: 0 auto;
+  background-color: #435b66;
+}
+#first-nav img {
+  width: 5%;
+  height: 50%;
+}
+#big-nav {
+  background: rgb(45, 67, 86);
+  background: linear-gradient(
+    0deg,
+    rgba(45, 67, 86, 0.7147992986257004) 0%,
+    rgba(45, 67, 86, 1) 100%
+  );
+  color: aliceblue;
+}
+#big-nav a {
+  color: aliceblue;
   text-decoration: none;
 }
-.nav {
-  background-color: aquamarine;
+#second-nav {
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 1%;
+  align-items: stretch;
+  align-content: stretch;
+}
+#second-nav .w3-col {
+  height: 100%;
+}
+#card1 {
+  background-color: #a76f6f;
+}
+#card2 {
+  background-color: #b67e7a;
+}
+#card3 {
+  background-color: #c58d85;
+}
+#card4 {
+  background-color: #cd958b;
+}
+#footer-content {
+  width: 70%;
+  margin: 0 auto;
+  margin-left: 20%;
+}
+.cards {
+  margin-top: 300px;
+}
+.posts {
   display: flex;
-}
-.nav-main {
-  background-color: aquamarine;
-  display: flex;
-  list-style: none;
-}
-.nav-main ul {
-  background-color: aquamarine;
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-}
-.nav-main ul li {
-  padding: 1%;
-  margin: 2%;
-}
-
-.btn {
-  background-color: blueviolet;
-  border-radius: 8px;
-  padding: 2%;
-  width: -moz-fit-content;
-  width: fit-content;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  justify-self: center;
+  margin: 0 auto;
+  align-items: center;
 }
 .post {
-  min-width: -moz-fit-content;
-  min-width: -webkit-fill-available;
-  min-width: fit-content;
-  height: 250px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin: 2%;
+  padding: 2%;
+}
+.post a {
+  color: #435b66;
+  text-decoration: none;
+}
+.employee {
+  background-color: #eab2a0;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  padding: 5%;
+}
+.employee .row {
+  width: 80%;
+  margin: 0 auto;
+}
+.employee img {
+  width: 25%;
+  background-color: #a76f6f;
+  border-radius: 50%;
+  position: static;
+  float: left;
+  margin: 5%;
+}
+.employee h1,
+p {
+  width: 70%;
+  margin: 0;
+}
+.bg-1 {
+  background-color: #eab2a0;
+}
+.bg-2 {
+  background-color: #cd958b;
+}
+.bg-3 {
+  background-color: #b67e7a;
+}
+.bg-4 {
+  background-color: #a76f6f;
+}
+.bg-1 img {
+  background-color: #a76f6f;
+}
+.bg-2 img {
+  background-color: #b67e7a;
+}
+.bg-3 img {
+  background-color: #c58d85;
+}
+.bg-4 img {
+  background-color: #eab2a0;
+}
+.carma-btn {
+  background-color: #435b66;
+  width: 100%;
+  height: 100%;
+  color: #eab2a0;
+  display: block;
+  justify-self: center;
+  align-self: stretch;
+  text-align: center;
+  text-decoration: none;
+  padding: 7%;
+}
+.carma-btn:hover {
+  color: #a76f6f;
+  background-color: #536871;
+}
+.logo {
+  font-size: 30px;
+}
+.donate {
+  background-color: #a76f6f;
+  margin-left: 15%;
+  margin-bottom: 1%;
+}
+@media only screen and (max-width: 1000px) {
+  #first-nav .w3-col {
+    font-size: 8pt;
+  }
+  #second-nav {
+    margin-top: 2.5%;
+  }
+  .carma-btn {
+    font-size: 8pt;
+  }
+  .donate {
+    font-size: 8pt;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .carma-btn {
+    display: none;
+  }
+  .donate {
+    display: none;
+  }
 }
